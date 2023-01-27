@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+      maximum-scale=1.0, user-scalable=no" />
+    <meta name="author" content="Hannes Blitza, Christian Mayer" />
+    <title>Geodatenanalyse in der Cloud mit OGC API Processes und pygeoapi</title>
+    <meta name="description" content="Geodatenanalyse in der Cloud mit OGC API
+      Processes und pygeoapi"/>
+
+    <link rel="stylesheet" href="./reveal.js-3.6.0/css/reveal.css" />
+    <link rel="stylesheet" href="./reveal.js-3.6.0/css/theme/white.css"
+      />
+
+    <link rel="stylesheet" href="./css/customized.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="./reveal.js-3.6.0/lib/css/zenburn.css"
+      />
+
+    <!-- Printing and PDF exports -->
+    <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ?
+      './reveal.js-3.6.0/css/print/pdf.css' :
+      './reveal.js-3.6.0/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+
+    if (window.location.search.match(/print-pdf/gi)) {
+      var linkCustomPrint = document.createElement('link');
+      linkCustomPrint.rel = 'stylesheet';
+      linkCustomPrint.type = 'text/css';
+      linkCustomPrint.href = './css/meggsimum-print.css';
+      document.getElementsByTagName('head')[0].appendChild(linkCustomPrint);
+    }
+  </script>
+  </head>
+
+  <body>
+
+    <!-- BEGIN OF SLIDES -->
+
+    <div class="reveal">
+      <div class="slides">
+
+        <section id="start">
+          <p>Geodatenanalyse in der Cloud mit</p>
+          <h2>OGC API Processes und pygeoapi</h2>
+          <p>
+            <small>Hannes Blitza, terrestris GmbH & Co. KG</small>
+            <br>
+            <small>Christian Mayer, meggsimum - Büro für Geoinformatik</small>
+          </p>
+          <p>
+            <span style="font-size: small;">FOSSGIS 2023, 16.03.2023</span>
+          </p>
+        </section>
+
+        <section>
+          <h2>Christian Mayer</h2>
+          <div class="split-info">
+            <div class="part" style="width:35%">
+              <img src="./img/chris-mayer.jpg" class="plain"
+                width="200" /><br />
+              <small>
+                <a class="email" href="mailto:chris@meggsimum.de">chris@meggsimum.de</a><br
+                  />
+                <a class="github" href="https://github.com/meggsimum">@meggsimum</a><br
+                  />
+                <a class="twitter" href="https://twitter.com/meggsimum">@meggsimum</a><br
+                  />
+              </small><br />
+            </div>
+            <div class="part" style="width:60%">
+              <div class="enumeration">
+                <ul>
+                  <li>Geoinformatiker</li>
+                  <li>Anwendungsentwickler</li>
+                  <li>OSGeo Foundation Charter Member</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div style="clear:both"></div>
+        </section>
+
+        <section>
+          <h2>Hannes Blitza</h2>
+          <div class="split-info">
+            <div class="part" style="width:35%">
+              <img src="./img/hannes-blitza.jpg" class="plain"
+                width="200" /><br />
+              <small>
+                <a class="email" href="mailto:blitza@terrestris.de">blitza@terrestris.de</a>
+                <br />
+                <a class="github" href="https://github.com/hblitza">@hblitza</a>
+                <br />
+              </small><br />
+            </div>
+            <div class="part" style="width:60%">
+              <div class="enumeration">
+                <ul>
+                  <li>TODO</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div style="clear:both"></div>
+        </section>
+
+        <section>
+          <img src="./img/klips_logo.png" style="background:none; border:none;
+            box-shadow:none;" height="180px">
+          <br>
+
+          <a href="http://www.klips-projekt.de/">www.klips-projekt.de</a>
+          <p style="font-size: smaller;">
+            KI-basierte Informationsplattform für die Lokalisierung und
+            Simulation von Hitzeinseln für eine innovative Stadt- und
+            Verkehrsplanung
+          </p>
+
+          <img src="./img/bmdv.png"
+            style="background:none; border:none; box-shadow:none;"
+            height="200px">
+          <img src="./img/mfund.jpg"
+            style="background:none; border:none; box-shadow:none;"
+            height="200px">
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## OGC API Processes
+
+            - Nachfolger von WPS (Web Processing Service)
+            - JSON-basiert
+            - REST-Schnittstelle
+            - veröffentlicht Ende 2021
+
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+
+            <img src="./img/pygeoapi-logo.png" alt="pygeoapi logo"
+              style="background:none; border:none; box-shadow:none;">
+
+              - in Python
+              - Server Software für OGC API Diensten
+              - unterstütze Standards
+                - OGC API Features
+                - OGC API Processes
+                - OGC API Coverages
+                - ...
+              - OSGeo Projekt
+
+
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+
+            ## Zonale Statistiken
+
+            - TODO
+            - TODO: Abbildung
+
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+
+            <img src="./img/cog.png" alt="cog logo" height="200px"
+              style="background:none; border:none; box-shadow:none;">
+
+            - Cloud-Optimized GeoTIFF (COG)
+            - voll kompatibel zu allem was GeoTIFF lesen kann
+            - kann über HTTP-Requests abgefragt werden
+
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            <img src="./img/gdal-logo.png" alt="GDAL/OGR Logo" height="200px"
+              style="background:none; border:none; box-shadow:none;">
+
+            - Bibliothek zur Prozessierung und Umwandlung von Geodaten
+            - darauf aufbauene Python-Bibliotheken
+              - fiona (Vektordaten)
+              - rasterio (Rasterdaten)
+              - rio-cogeo (Plugin von rasterio für Rasterdaten)
+              - rasterstats (Zonale Statistiken)
+            - OSGeo Projekt
+
+
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            <img src="./img/grassgis_logo.png" alt="GRASSGIS Logo"
+              height="200px"
+              style="background:none; border:none; box-shadow:none;">
+
+            - TODO
+            - OSGeo Projekt
+
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## Links
+
+            - [Vortrag in FOSSGIS
+            Pretalx](https://pretalx.com/fossgis2023/talk/BTSUDS/)
+            - [pygeoapi](https://pygeoapi.io/)
+            - [OGC API Processes](https://ogcapi.ogc.org/processes/)
+            - [KLIPS Projekt](https://www.klips-projekt.de/)
+            - [Source Code](https://github.com/klips-project/klips-sdi)
+            - [meggsimum](https://meggsimum.de/)
+            - [terrestris](https://www.terrestris.de/)
+          </textarea>
+        </section>
+
+        <section id="imprint">
+          <h2>Autoren</h2>
+          <div style="width: 45%; float: left;">
+            <address style="text-align: left">
+              <strong>Christian Mayer</strong><br />
+              <span style="font-size: smaller;">
+                meggsimum - Büro für Geoinformatik<br />
+                Schillerstraße 2a<br />
+                67112 Mutterstadt<br />
+                chris@meggsimum.de
+              </span>
+            </address>
+          </div>
+          <div style="width: 45%; float: right;">
+            <address style="text-align: right">
+              <strong>Hannes Blitza</strong><br />
+              <span style="font-size: smaller;">
+                terrestris GmbH &amp; Co. KG<br />
+                Kölnstr. 99<br />
+                53111 Bonn<br />
+                blitza@terrestris.de
+              </span>
+            </address>
+          </div>
+          <h4 style="clear:both;">Lizenz</h4>
+          <p id="license">
+            Diese Folien sind unter <a
+              href="http://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>
+            veröffentlicht.
+          </p>
+          <p>
+            <a
+              href="https://klips-project.github.io/fossgis2023/ogc-api-processes">Vortragsfolien</a>,
+            <a href="https://github.com/klips-project/fossgis2023">git
+              repository</a>
+          </p>
+        </section>
+
+      </div>
+    </div>
+
+
+    <!-- END OF SLIDES -->
+
+
+    <script src="./reveal.js-3.6.0/lib/js/head.min.js"></script>
+    <script src="./reveal.js-3.6.0/js/reveal.js"></script>
+    <script>
+    (function () {
+      var revealPath = './reveal.js-3.6.0/';
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          {
+            src: revealPath + 'plugin/markdown/marked.js'
+          },
+          {
+            src: revealPath + 'plugin/markdown/markdown.js'
+          },
+          {
+            src: revealPath + 'plugin/notes/notes.js',
+            async: true
+          },
+          {
+            src: revealPath + 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          }
+        ]
+      });
+    }());
+  </script>
+  </body>
+
+</html>
