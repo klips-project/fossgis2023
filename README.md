@@ -2,9 +2,9 @@
 
 Materialien für die FOSSGIS Konferenz 2023 in Berlin.
 
-## Folien
+## Vortrag
 
 Geodatenanalyse in der Cloud mit OGC API Processes und pygeoapi
 
-- [Folien](https://klips-project.github.io/fossgis2023/ogc-api-processes) - TODO: ADAPT
+- TODO: ensure URL is available [Folien](https://klips-project.github.io/fossgis2023/ogc-api-processes)
 - [Pretalx](https://pretalx.com/fossgis2023/talk/BTSUDS/)
