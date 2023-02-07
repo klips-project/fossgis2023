@@ -200,7 +200,6 @@
               - rasterstats (Zonale Statistiken)
             - OSGeo Projekt
 
-
           </textarea>
         </section>
 
@@ -218,8 +217,84 @@
 
         <section data-markdown>
           <textarea data-template>
+
+            ## Übersicht Prozesse
+
+            <img src="./img/process_overview.png" alt="Übersicht Prozesse"
+              style="background:none; border:none; box-shadow:none;">
+
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+
+            ## Detailansicht Prozess
+
+            <img src="./img/process_detail.png" alt="Detailansicht Prozess"
+              style="background:none; border:none; box-shadow:none;">
+
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+
+            ## Beispiel Request
+
+            ```json
+            {
+              "inputs": {
+                "x": 1525303,
+                "y": 6636103,
+                "cogDirUrl": "http://nginx/cog/",
+                "inputCrs": "EPSG:3857",
+                "startTimeStamp": "2000-01-01T12:32:00Z",
+                "endTimeStamp": "2024-12-31T12:32:00Z"
+              }
+            }
+            ```
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+
+            ## Beispiel Response
+
+            ```json
+            {
+              "values": [
+                {
+                  "band_0": 276.52368756798535,
+                  "timestamp": "2022-02-16T00:00:00Z"
+                },
+                {
+                  "band_0": 22.25165738512104,
+                  "timestamp": "2022-02-17T00:00:00Z"
+                }
+              ]
+            }
+            ```
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+
+            ## Web Demonstrator
+
+            <img src="./img/web-demo.png" alt="Web Demonstrator"
+              style="background:none; border:none; box-shadow:none;">
+
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
             ## Links
 
+            - TODO - LINK ZUM ONLINE DEMONSTRATOR / ZUR PYGEOAPI INSTANZ
             - [Vortrag in FOSSGIS
             Pretalx](https://pretalx.com/fossgis2023/talk/BTSUDS/)
             - [pygeoapi](https://pygeoapi.io/)
