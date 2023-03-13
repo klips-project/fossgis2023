@@ -27,7 +27,7 @@ const props = defineProps({
 <template>
   <div class="slidev-layout two-columns w-full h-full grid grid-cols-2">
     <div class="col-left" :class="props.class">
-      <slot />
+      <slot/>
     </div>
     <div class="col-right" :class="props.class">
       <slot name="right" />
@@ -46,7 +46,7 @@ const props = defineProps({
   align-items: center;
   justify-content: center;
 }
-.author-logo {
-
+.slidev-layout ul {
+  list-style: none !important;
 }
 </style>
