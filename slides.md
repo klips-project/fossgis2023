@@ -23,8 +23,8 @@ favicon: https://fossgis-konferenz.de/favicon.ico
 
 ::logos::
 
-<img src="meggsimum-logo.png" />
-<img src="terrestris-logo-normal.svg" />
+<img src="/meggsimum-logo.png" />
+<img src="/terrestris-logo-normal.svg" />
 
 ::authors::
 
@@ -152,7 +152,7 @@ class:
 ---
 
 <div class="flex justify-center">
-  <img src="/pygeoapi-logo.png" style="width:10vw" class="self-center py-8" />
+  <img src="/pygeoapi-logo.png" style="width:15vw" class="self-center py-8" />
 </div>
 
 - Python Server Software für OGC API Services
@@ -270,7 +270,13 @@ class:
 TODO Ausblick future: videos, charts
 
 
-# Links
+---
+layout: main
+class: 
+---
+
+
+# Hilfreiche Links
 
 - Source Code: https://github.com/klips-project/klips-sdi
 - Demonstrator Rasterstatistiken: https://klips-dev.terrestris.de/demonstrator
@@ -278,8 +284,6 @@ TODO Ausblick future: videos, charts
 - pygeoapi: https://pygeoapi.io
 - OGC API Processes: https://ogcapi.ogc.org/processes
 - KLIPS Projekt: https://www.klips-projekt.de
-- meggsimum: https://meggsimum.de
-- terrestris: https://www.terrestris.de
 
 ---
 end
