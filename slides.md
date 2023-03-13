@@ -55,7 +55,7 @@ layout: two-cols-custom
 layout: two-cols-custom
 ---
 
-<img src="/hannes-blitza.jpg" style="width: 200px !important"/>
+<img src="/hbl.jpg" style="width: 160px !important"/>
 
 <div class="social">
 
@@ -67,9 +67,12 @@ layout: two-cols-custom
 ::right::
 ### Hannes Blitza
 - Geographie M.Sc.
-- Vertrieb @terrestris
-- Anwendungsentwickler
+- Vertrieb und Anwendungsentwickler @terrestris
 - Training für OS Geo Software
+  - Masterportal
+  - QGIS
+  - MapProxy
+  - GeoServer
 
 <img src="/terrestris-logo-normal.svg" style="width: 200px !important" class="py-6" />
 
@@ -245,7 +248,6 @@ class:
   }
   ```
 
-
 ---
 layout: main
 class: 
@@ -259,7 +261,7 @@ class:
   <SlideCurrentNo className="pageNumber" />
 </div>
 
-TODO URL, ggf. live zeigen
+TODO  URL, ggf. live zeigen
 
 ---
 layout: main
@@ -267,7 +269,7 @@ class:
 ---
 
 
-TODO Ausblick future: videos, charts
+TODO CM Ausblick future: videos, charts
 
 
 ---
