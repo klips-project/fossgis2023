@@ -1,21 +1,9 @@
 ---
-# try also 'default' to start simple
 theme: default
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
-background: https://source.unsplash.com/collection/94734566/1920x1080
-# apply any windi css classes to the current slide
 class: 'text-center'
-# https://sli.dev/custom/highlighters.html
 highlighter: shiki
 # show line numbers in code blocks
-lineNumbers: false
-# some information about the slides, markdown enabled
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
+lineNumbers: true
 # persist drawings in exports and build
 drawings:
   persist: false
@@ -23,31 +11,37 @@ drawings:
 transition: slide-left
 # use UnoCSS
 css: unocss
-layout: start
+layout: cover_custom
 fonts:
   # basically the text
-  sans: 'Open Sans'
-  # use with `font-serif` css class from windicss
-  serif: 'Robot Slab'
-  # for code blocks, inline code, etc.
-  mono: 'Fira Code'
+  sans: 'Lato'
+favicon: https://fossgis-konferenz.de/favicon.ico
 ---
 
-## Geodatenanalyse in der Cloud
-# OGC API Processes und pygeoapi
+# Geodatenanalyse in der Cloud
+## OGC API Processes und pygeoapi
 
+::logos::
+
+<img src="meggsimum-logo.png" />
+<img src="terrestris-logo-normal.svg" />
+
+::authors::
+
+Hannes Blitza, Christian Mayer
 
 ---
 layout: two-cols-custom
 ---
 
-
 <img src="/chris-mayer.jpg" style="width: 200px !important"/>
 
-  - chris@meggsimum.de
-  - twitter: @meggsimum
-  - [github/terrestris.de](https://github.com/meggsimum)
+<div class="social">
 
+- <mdi-email-edit-outline /> chris@meggsimum.de
+- <mdi-twitter /> meggsimum
+- <mdi-Github /> github.com/meggsimum
+</div>
 
 ::right::
 ### Christian Mayer
@@ -55,12 +49,7 @@ layout: two-cols-custom
 - Anwendungsentwickler
 - OSGeo Foundation Charter Member
 
-<img src="/meggsimum-logo.png" style="width: 200px !important" class="py-6" />
-
-<div class="klips-footer">
-  <SlideCurrentNo className="pageNumber" /> / <SlidesTotal />
-</div>
-
+<img src="/meggsimum-logo.png" style="width: 300px !important" class="py-6" />
 
 ---
 layout: two-cols-custom
@@ -68,22 +57,21 @@ layout: two-cols-custom
 
 <img src="/hannes-blitza.jpg" style="width: 200px !important"/>
 
-  - blitza@terrestris.de
-  - twitter: @terrestrisde
-  - [github/terrestris.de](https://github.com/terrestris)
+<div class="social">
 
+- <mdi-email-edit-outline /> blitza@terrestris.de
+- <mdi-twitter /> terrestrisde
+- <mdi-Github /> github.com/terrestris
+</div>
 
 ::right::
 ### Hannes Blitza
 - Geographie M.Sc.
+- Vertrieb @terrestris
 - Anwendungsentwickler
 - Training für OS Geo Software
 
 <img src="/terrestris-logo-normal.svg" style="width: 200px !important" class="py-6" />
-
-<div class="klips-footer">
-  <SlideCurrentNo className="pageNumber" />
-</div>
 
 ---
 layout: main
@@ -101,15 +89,15 @@ class:
   <img src="/mfund.jpg" style="height:40%" />
 </div>
 
-<div class="klips-footer">
-  <SlideCurrentNo className="pageNumber" />
-</div>
 
 ---
-layout: two-cols
+layout: two-cols-header
 class: 
 ---
 
+# KLIPS
+
+::left::
 
 *Digitale Informationsplattform zur 
 Lokalisierung, Prognose und Simulation 
@@ -123,23 +111,16 @@ von Hitzeinseln*
 
 <img src="/klips_overview.png" />
 
-<div class="klips-footer">
-  <SlideCurrentNo className="pageNumber" />
-</div>
-
 ---
 layout: main
 ---
 
 # "Unsere Arbeitspakete"
 
-TODO herausarbeiten
+TODO CM herausarbeiten
 Was genau machen meggsimum und terrestris
 --> 1,2 prägnante Sätze
 
-<div class="klips-footer">
-  <SlideCurrentNo className="pageNumber" />
-</div>
 ---
 layout: main
 ---
@@ -147,20 +128,7 @@ layout: main
 # KLIPS GDI Übersicht
 
 <img src="/klips_architecture1.png" style="width:90%"/>
-<div class="klips-footer">
-  <SlideCurrentNo className="pageNumber" />
-</div>
 
----
-layout: main
----
-
-# Message Queue
-
-<img src="/rabbitmq.svg" style="width:90%"/>
-<div class="klips-footer">
-  <SlideCurrentNo className="pageNumber" />
-</div>
 
 ---
 layout: main
@@ -169,14 +137,14 @@ layout: main
 # OGC API Processes
 
 - Nachfolger von WPS (Web Processing Service)
-- JSON-basiert
-- REST-Schnittstelle
-- stabile Version veröffentlicht Ende 2021
+- **Core Part 1** veröffentlicht in 12/2021
+- RESTful
+- JSON encodings
+- Asynchron und Synchron
 - [Implementierungen](https://github.com/opengeospatial/ogcapi-processes/blob/master/implementations.adoc)
-
-<div class="klips-footer">
-  <SlideCurrentNo className="pageNumber" />
-</div>
+  - pygeoapi
+  - ZOO-Project
+  - u.w.
 
 ---
 layout: main
@@ -184,107 +152,46 @@ class:
 ---
 
 <div class="flex justify-center">
-  <img src="/pygeoapi-logo.png" style="width:20vw" class="self-center" />
+  <img src="/pygeoapi-logo.png" style="width:10vw" class="self-center py-8" />
 </div>
 
-- in Python
-- Server Software für OGC API Diensten
-- unterstütze Standards
-  - OGC API Features
-  - OGC API Processes
-  - OGC API Coverages
-  - ...
-- OSGeo Projekt
-
-<div class="klips-footer">
-  <SlideCurrentNo className="pageNumber" />
-</div>
+- Python Server Software für OGC API Services
+- Plugin-Architektur
+- Synchroner und asynchroner Modus
+- OpenAPI
+- unterstütze Standards: OGC API Features, OGC API Processes, OGC API Coverages, OGC API Tiles, etc.
+- [OSGeo Projekt](https://www.osgeo.org/projects/pygeoapi/)
+- Einfacher Workflow um etablierte GDAL oder GRASS Prozesse als OGC API Process zu veröffentlichen
 
 ---
 layout: main
 class: 
 ---
 
-# Zonale Statistiken
+# Rasterstatistiken für KLIPS
 
-- Fasst die Werte eines Rasters innerhalb der Zonen eines anderen Datasets zusammen.
-- Beschreibung der Input Daten
-- Use Case beschreiben
-- TODO: Abbildung!
+- Fasst die Werte eines Rasters basierend auf Vektorgeometrien zusammen
+- Input:
+  - Vorhersage-Raster (COG)
+  - Geometrie (Punkt oder Polygon)
+- Output: Statistiken (als JSON)
+- Exemplarischer Usecase: <br />
+   Eine Schulleitung möchte die Vorhersage für das Schulgelände erfahren.
 
-<div class="klips-footer">
-  <SlideCurrentNo className="pageNumber" />
-</div>
-
----
-layout: main
-class: 
----
-
-
-<img src="/cog.png" style="width: 300px"/>
-
-- Cloud-Optimized GeoTIFF (COG)
-- Vollstens kompatibel zu allem was GeoTIFF lesen kann
-- Räumliche Ausschnitte auslesbar durch HTTP Range Requests
-- Viele Tools und Libraries, u.a. GDAL, GeoServer, QGIS, GRASS GIS
-- TODO example (OL oder GDAL)
-
-
-<div class="klips-footer">
-  <SlideCurrentNo className="pageNumber" />
-</div>
+<img src="/rasterstats.svg" class="py-8" style="width: 50%">
 
 ---
 layout: main
-class: 
----
-
-
-<img src="/gdal-logo.png" style="width: 200px"/>
-
-- Bibliothek zur Prozessierung und Umwandlung von Geodaten
-- darauf aufbauene Python-Bibliotheken
-  - fiona (Vektordaten)
-  - rasterio (Rasterdaten)
-  - rio-cogeo (Plugin von rasterio für Rasterdaten)
-  - rasterstats (Zonale Statistiken)
-- OSGeo Projekt
-
-
-<div class="klips-footer">
-  <SlideCurrentNo className="pageNumber" />
-</div>
-
----
-layout: main
-class: 
----
-
-<img src="/grassgis_logo.png" style="width: 200px"/>
-
-- Funktionsreiches, performantes, modulares GIS (C und Python)
-- > 500 Module + ~ 360 Addons
-- Python Bindings 
-- TODO actinia, openeo erläutern
-
-<div class="klips-footer">
-  <SlideCurrentNo className="pageNumber" />
-</div>
-
----
-layout: main
-class: 
 ---
 
 # Übersicht Prozesse
 
+losgelöst von XML Hölle, json ist mandatory rest selbst. RESTful
+
++ Screenshot in JSON als Vergleich maschinenlesbar menschenexplorierbar
+  
+
 <img src="/process_overview.png" alt="Übersicht Prozesse" style="width: 30vw">
-
-<div class="klips-footer">
-  <SlideCurrentNo className="pageNumber" />
-</div>
-
 
 ---
 layout: main
@@ -293,18 +200,19 @@ class:
 
 # Detailansicht Prozesse
 
++ Screenshot in JSON als Vergleich maschinenlesbar menschenexplorierbar
+
 <img src="/process_detail.png" alt="Übersicht Prozesse" style="width: 40vw">
 
-<div class="klips-footer">
-  <SlideCurrentNo className="pageNumber" />
-</div>
-
 ---
-layout: main
+layout: two-cols-custom
 class: 
 ---
 
 # Example request
+
+<!-- nebeneinander packen  -->
+
 ```json
 {
   "inputs": {
@@ -317,14 +225,8 @@ class:
   }
 }
 ```
-<div class="klips-footer">
-  <SlideCurrentNo className="pageNumber" />
-</div>
 
----
-layout: main
-class: 
----
+::right::
 
 # Example response
 
@@ -342,9 +244,6 @@ class:
     ]
   }
   ```
-<div class="klips-footer">
-  <SlideCurrentNo className="pageNumber" />
-</div>
 
 
 ---
@@ -360,10 +259,16 @@ class:
   <SlideCurrentNo className="pageNumber" />
 </div>
 
+TODO URL, ggf. live zeigen
+
 ---
 layout: main
 class: 
 ---
+
+
+TODO Ausblick future: videos, charts
+
 
 # Links
 
@@ -376,6 +281,8 @@ class:
 - meggsimum: https://meggsimum.de
 - terrestris: https://www.terrestris.de
 
-<div class="klips-footer">
-  <SlideCurrentNo className="pageNumber" />
-</div>
+---
+end
+---
+
+# end

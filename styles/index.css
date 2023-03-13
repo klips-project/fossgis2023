@@ -1,4 +1,4 @@
-.klips-footer {
+.footer {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -13,3 +13,11 @@
     align-items: center;
     color: white;
 }
+#page-root {
+    font-family: 'Lato' !important;
+}
+
+
+.slidev-layout .social ul {
+    list-style: none !important;
+  }
