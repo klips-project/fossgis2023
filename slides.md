@@ -275,8 +275,21 @@ layout: main
 class:
 ---
 
+# Ausblick
 
-TODO CM Ausblick future: videos, charts
+- Top-Level-API
+  - mit Hilfe oder basierend auf OGC API Processes
+  - Direkte Chart Generierung für Zeitreihen
+  - Videos für "Timelapse"
+  - API für Hitze-Warnungen für bestimmte Position / Adressen
+
+## <!-- this adds an empty h2 as spacer -->
+
+# Fazit
+
+- Sehr einfach nutzbar, für Webanwendungen aber auch für den Menschen
+- Raus aus der XML-Hölle
+- Sehr flexibel in Einrichtung / Implementierung
 
 
 ---
