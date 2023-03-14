@@ -294,7 +294,7 @@ class:
 
 # Web Demonstrator
 
-<img src="/web-demo.png" alt="Web Demonstrator" />
+<img src="/web-demo.png" alt="Web Demonstrator" style="height: 80%"/>
 
 <!-- <div class="klips-footer">
   <SlideCurrentNo className="pageNumber" />
