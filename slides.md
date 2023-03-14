@@ -163,8 +163,9 @@ class:
   - Vorhersage-Raster (COG)
   - Geometrie (Punkt oder Polygon)
 - Output: Statistiken (als JSON)
-- Exemplarischer Usecase: <br />
-   Eine Schulleitung möchte die Vorhersage für das Schulgelände erfahren.
+- Exemplarische Use-Cases
+  - Altersheim möchte wissen, ob Gelände von Hitzeinsel betroffen ist
+  - Stadtplaner wollen wissen, in welchen Gebieten Maßnahmen getroffen werden müssen
 
 <img src="/rasterstats.svg" class="py-8" style="width: 50%">
 
