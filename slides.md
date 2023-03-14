@@ -307,8 +307,38 @@ class:
 - OGC API Processes: https://ogcapi.ogc.org/processes
 - KLIPS Projekt: https://www.klips-projekt.de
 
+
 ---
-end
+layout: main
 ---
 
-# end
+# Kontakt / Impressum
+
+<div style="width: 45%; float: left;">
+  <address style="text-align: left">
+    <strong>Hannes Blitza</strong><br />
+    <span style="font-size: smaller;">
+      terrestris GmbH &amp; Co. KG<br />
+      Kölnstr. 99<br />
+      53111 Bonn<br />
+      suleiman@terrestris.de
+    </span>
+  </address>
+</div>
+
+<div style="width: 45%; float: right; margin-top: 25px;">
+  <address style="text-align: right">
+    <strong>Christian Mayer</strong><br />
+    <span style="font-size: smaller;">
+      meggsimum - Büro für Geoinformatik<br />
+      Schillerstraße 2a<br />
+      67112 Mutterstadt<br />
+      chris@meggsimum.de
+    </span>
+  </address>
+</div>
+
+<p id="license" style="margin-top: 25px;">
+  Diese Folien sind unter <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>
+  veröffentlicht.
+</p>
