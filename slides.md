@@ -120,7 +120,7 @@ von Hitzeinseln*
 layout: main
 ---
 
-# "Unsere Arbeitspakete"
+# "Unsere" Arbeitspakete
 
 - Aufbau GDI
 - Automatische Prozessierung und Veröffentlichung von Ergebnisdaten über APIs
@@ -134,9 +134,9 @@ layout: two-cols
 class:
 ---
 
-# Daten
+# KLIPS Daten
 
-- Zeitreihen (Mechn. Lernen) für Modellregionen
+- Zeitreihen (Mechn. Lernen + Sensorik) für Modellregionen
   - Temperaturvorhersagen (+24 Std) aus Modell
   - Echtzeit Temperaturen aus Modell
   - Räumliche Auflösung: ????????????????
@@ -198,7 +198,7 @@ class:
 - Plugin-Architektur
 - Synchroner und asynchroner Modus
 - OpenAPI
-- unterstütze Standards: OGC API Features, OGC API Processes, OGC API Coverages, OGC API Tiles, etc.
+- Unterstütze Standards: OGC API Features, OGC API Processes, OGC API Coverages, OGC API Tiles, etc.
 - [OSGeo Projekt](https://www.osgeo.org/projects/pygeoapi/)
 - Einfacher Workflow um etablierte GDAL oder GRASS Prozesse als OGC API Process zu veröffentlichen
 
@@ -238,14 +238,18 @@ class:
 
 ---
 layout: two-cols-header
-class:
+class: request-response
 ---
 
 ::left::
 
-# Example request
+# Example Request
 
 <!-- nebeneinander packen  -->
+
+HTTP POST https://klips-dev.terrestris.de/processes/location-info-rasterstats/execution
+
+Payload:
 
 ```json
 {
@@ -262,7 +266,7 @@ class:
 
 ::right::
 
-# Example response
+# Example Response
 
   ```json
   {
@@ -274,6 +278,10 @@ class:
       {
         "band_0": 22.25165738512104,
         "timestamp": "2022-02-17T00:00:00Z"
+      },
+      {
+        "band_0": 27.88457518896883,
+        "timestamp": "2022-02-18T00:00:00Z"
       }
     ]
   }
@@ -345,7 +353,7 @@ layout: main
       terrestris GmbH &amp; Co. KG<br />
       Kölnstr. 99<br />
       53111 Bonn<br />
-      suleiman@terrestris.de
+      blitza@terrestris.de
     </span>
   </address>
 </div>

@@ -20,4 +20,8 @@
 
 .slidev-layout .social ul {
     list-style: none !important;
-  }
+}
+
+.request-response.col-left {
+  padding-right: 10px;
+}
