@@ -23,8 +23,8 @@ favicon: https://fossgis-konferenz.de/favicon.ico
 
 ::logos::
 
-<img src="/meggsimum-logo.png" />
 <img src="/terrestris-logo-normal.svg" />
+<img src="/meggsimum-logo_bold.png"  />
 
 ::authors::
 
@@ -34,7 +34,7 @@ Hannes Blitza, Christian Mayer
 layout: two-cols-custom
 ---
 
-<img src="/chris-mayer.jpg" style="width: 200px !important"/>
+<img src="/profilbild-christian-mayer.jpeg" style="width: 200px !important"/>
 
 <div class="social">
 
@@ -45,11 +45,13 @@ layout: two-cols-custom
 
 ::right::
 ### Christian Mayer
-- Geoinformatiker
-- Anwendungsentwickler
+
+- Dipl.-Ing. Geoinformatik und Vermessung
+- Gründer und CEO meggsimum
+- Softwarearchitekt und -entwickler
 - OSGeo Foundation Charter Member
 
-<img src="/meggsimum-logo.png" style="width: 300px !important" class="py-6" />
+<img src="/meggsimum-logo_bold.png" style="width: 300px !important" class="py-6" />
 
 ---
 layout: two-cols-custom
@@ -95,15 +97,15 @@ class:
 
 ---
 layout: two-cols-header
-class: 
+class:
 ---
 
 # KLIPS
 
 ::left::
 
-*Digitale Informationsplattform zur 
-Lokalisierung, Prognose und Simulation 
+*Digitale Informationsplattform zur
+Lokalisierung, Prognose und Simulation
 von Hitzeinseln*
 
 - **Echtzeitanalyse**: Lokalisierung der aktuell auftretenden Hitzeinseln im Stadtgebiet
@@ -118,20 +120,54 @@ von Hitzeinseln*
 layout: main
 ---
 
-# "Unsere Arbeitspakete"
+# "Unsere" Arbeitspakete
 
-TODO CM herausarbeiten
-Was genau machen meggsimum und terrestris
---> 1,2 prägnante Sätze
+- Aufbau GDI
+- Automatische Prozessierung und Veröffentlichung von Ergebnisdaten über APIs
+- Demonstratoren für einzelne APIs
+
+<div style="margin-top: 20px;"></div>
+<img src="/klips_architecture1.png" style="width:90%"/>
+
+---
+layout: two-cols
+class:
+---
+
+# KLIPS Daten
+
+- Zeitreihen (Mechn. Lernen + Sensorik) für Modellregionen
+  - Temperaturvorhersagen (+24 Std) aus Modell
+  - Echtzeit Temperaturen aus Modell
+  - Räumliche Auflösung: ????????????????
+- Cloud-Optimized GeoTIFF (COG)
+  - Vollständig kompatibel zu allem was GeoTIFF lesen kann
+  - Räumliche Ausschnitte auslesbar durch HTTP Range Requests
+  - Viele Tools und Libraries, u.a. GDAL, GeoServer, QGIS, GRASS GIS, OpenLayers
+
+::right::
+
+<div style="float: right">
+  <img src="/cog.png" style="width: 300px; float: right;"/>
+</div>
 
 ---
 layout: main
+class:
 ---
 
-# KLIPS GDI Übersicht
+# Rasterstatistiken für KLIPS
 
-<img src="/klips_architecture1.png" style="width:90%"/>
+- Fasst die Werte eines Rasters basierend auf Vektorgeometrien zusammen
+- Input:
+  - Vorhersage-Raster (COG)
+  - Geometrie (Punkt oder Polygon)
+- Output: Statistiken (als JSON)
+- Exemplarische Use-Cases
+  - Altersheim möchte wissen, ob Gelände von Hitzeinsel betroffen ist
+  - Stadtplaner wollen wissen, in welchen Gebieten Maßnahmen getroffen werden müssen
 
+<img src="/rasterstats.svg" class="py-8" style="width: 50%">
 
 ---
 layout: main
@@ -151,7 +187,7 @@ layout: main
 
 ---
 layout: main
-class: 
+class:
 ---
 
 <div class="flex justify-center">
@@ -162,65 +198,64 @@ class:
 - Plugin-Architektur
 - Synchroner und asynchroner Modus
 - OpenAPI
-- unterstütze Standards: OGC API Features, OGC API Processes, OGC API Coverages, OGC API Tiles, etc.
+- Unterstütze Standards: OGC API Features, OGC API Processes, OGC API Coverages, OGC API Tiles, etc.
 - [OSGeo Projekt](https://www.osgeo.org/projects/pygeoapi/)
 - Einfacher Workflow um etablierte GDAL oder GRASS Prozesse als OGC API Process zu veröffentlichen
 
----
-layout: main
-class: 
----
-
-# Rasterstatistiken für KLIPS
-
-- Fasst die Werte eines Rasters basierend auf Vektorgeometrien zusammen
-- Input:
-  - Vorhersage-Raster (COG)
-  - Geometrie (Punkt oder Polygon)
-- Output: Statistiken (als JSON)
-- Exemplarischer Usecase: <br />
-   Eine Schulleitung möchte die Vorhersage für das Schulgelände erfahren.
-
-<img src="/rasterstats.svg" class="py-8" style="width: 50%">
 
 ---
-layout: main
+layout: two-cols-header
 ---
 
 # Übersicht Prozesse
 
-losgelöst von XML Hölle, json ist mandatory rest selbst. RESTful
+::left::
 
-+ Screenshot in JSON als Vergleich maschinenlesbar menschenexplorierbar
-  
+maschinenlesbar
 
-<img src="/process_overview.png" alt="Übersicht Prozesse" style="width: 30vw">
+<img src="/process_overview_json.png" alt="Übersicht Prozesse" style="width: 30vw">
+
+::right::
+
+menschenexplorierbar
+
+<img src="/process_overview_html.png" alt="Übersicht Prozesse" style="width: 30vw">
 
 ---
-layout: main
-class: 
+layout: two-cols-header
+class:
 ---
 
 # Detailansicht Prozesse
 
-+ Screenshot in JSON als Vergleich maschinenlesbar menschenexplorierbar
+::left::
 
-<img src="/process_detail.png" alt="Übersicht Prozesse" style="width: 40vw">
+<img src="/process_detail_point_json.png" alt="Übersicht Prozesse" style="width: 40vw">
+
+::right::
+
+<img src="/process_detail_point_html.png" alt="Übersicht Prozesse" style="width: 40vw">
 
 ---
-layout: two-cols-custom
-class: 
+layout: two-cols-header
+class: request-response
 ---
 
-# Example request
+::left::
+
+# Example Request
 
 <!-- nebeneinander packen  -->
+
+HTTP POST https://klips-dev.terrestris.de/processes/location-info-rasterstats/execution
+
+Payload:
 
 ```json
 {
   "inputs": {
-    "x": 1525303,
-    "y": 6636103,
+    "x": 1525303.0,
+    "y": 6636103.0,
     "cogDirUrl": "http://nginx/cog/",
     "inputCrs": "EPSG:3857",
     "startTimeStamp": "2000-01-01T12:32:00Z",
@@ -231,7 +266,7 @@ class:
 
 ::right::
 
-# Example response
+# Example Response
 
   ```json
   {
@@ -243,6 +278,10 @@ class:
       {
         "band_0": 22.25165738512104,
         "timestamp": "2022-02-17T00:00:00Z"
+      },
+      {
+        "band_0": 27.88457518896883,
+        "timestamp": "2022-02-18T00:00:00Z"
       }
     ]
   }
@@ -250,31 +289,44 @@ class:
 
 ---
 layout: main
-class: 
+class:
 ---
 
 # Web Demonstrator
 
-<img src="/web-demo.png" alt="Web Demonstrator" />
+<img src="/web-demo.png" alt="Web Demonstrator" style="height: 80%"/>
 
-<div class="klips-footer">
+<!-- <div class="klips-footer">
   <SlideCurrentNo className="pageNumber" />
-</div>
+</div> -->
 
-TODO  URL, ggf. live zeigen
-
----
-layout: main
-class: 
----
-
-
-TODO CM Ausblick future: videos, charts
-
+https://klips-dev.terrestris.de/demonstrator/
 
 ---
 layout: main
-class: 
+class:
+---
+
+# Ausblick
+
+- Top-Level-API
+  - mit Hilfe oder basierend auf OGC API Processes
+  - Direkte Chart Generierung für Zeitreihen
+  - Videos für "Timelapse"
+  - API für Hitze-Warnungen für bestimmte Position / Adressen
+
+## <!-- this adds an empty h2 as spacer -->
+
+# Fazit
+
+- Sehr einfach nutzbar, für Webanwendungen aber auch für den Menschen
+- Raus aus der XML-Hölle
+- Sehr flexibel in Einrichtung / Implementierung
+
+
+---
+layout: main
+class:
 ---
 
 
@@ -287,8 +339,38 @@ class:
 - OGC API Processes: https://ogcapi.ogc.org/processes
 - KLIPS Projekt: https://www.klips-projekt.de
 
+
 ---
-end
+layout: main
 ---
 
-# end
+# Kontakt / Impressum
+
+<div style="width: 45%; float: left;">
+  <address style="text-align: left">
+    <strong>Hannes Blitza</strong><br />
+    <span style="font-size: smaller;">
+      terrestris GmbH &amp; Co. KG<br />
+      Kölnstr. 99<br />
+      53111 Bonn<br />
+      blitza@terrestris.de
+    </span>
+  </address>
+</div>
+
+<div style="width: 45%; float: right; margin-top: 25px;">
+  <address style="text-align: right">
+    <strong>Christian Mayer</strong><br />
+    <span style="font-size: smaller;">
+      meggsimum - Büro für Geoinformatik<br />
+      Schillerstraße 2a<br />
+      67112 Mutterstadt<br />
+      chris@meggsimum.de
+    </span>
+  </address>
+</div>
+
+<p id="license" style="margin-top: 25px;">
+  Diese Folien sind unter <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>
+  veröffentlicht.
+</p>
