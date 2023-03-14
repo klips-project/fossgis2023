@@ -23,8 +23,8 @@ favicon: https://fossgis-konferenz.de/favicon.ico
 
 ::logos::
 
-<img src="/meggsimum-logo.png" />
 <img src="/terrestris-logo-normal.svg" />
+<img src="/meggsimum-logo_bold.png"  />
 
 ::authors::
 
@@ -34,7 +34,7 @@ Hannes Blitza, Christian Mayer
 layout: two-cols-custom
 ---
 
-<img src="/chris-mayer.jpg" style="width: 200px !important"/>
+<img src="/profilbild-christian-mayer.jpeg" style="width: 200px !important"/>
 
 <div class="social">
 
@@ -45,11 +45,13 @@ layout: two-cols-custom
 
 ::right::
 ### Christian Mayer
-- Geoinformatiker
-- Anwendungsentwickler
+
+- Dipl.-Ing. Geoinformatik und Vermessung
+- Gründer und CEO meggsimum
+- Softwarearchitekt und -entwickler
 - OSGeo Foundation Charter Member
 
-<img src="/meggsimum-logo.png" style="width: 300px !important" class="py-6" />
+<img src="/meggsimum-logo_bold.png" style="width: 300px !important" class="py-6" />
 
 ---
 layout: two-cols-custom
@@ -95,15 +97,15 @@ class:
 
 ---
 layout: two-cols-header
-class: 
+class:
 ---
 
 # KLIPS
 
 ::left::
 
-*Digitale Informationsplattform zur 
-Lokalisierung, Prognose und Simulation 
+*Digitale Informationsplattform zur
+Lokalisierung, Prognose und Simulation
 von Hitzeinseln*
 
 - **Echtzeitanalyse**: Lokalisierung der aktuell auftretenden Hitzeinseln im Stadtgebiet
@@ -151,7 +153,7 @@ layout: main
 
 ---
 layout: main
-class: 
+class:
 ---
 
 <div class="flex justify-center">
@@ -168,7 +170,7 @@ class:
 
 ---
 layout: main
-class: 
+class:
 ---
 
 # Rasterstatistiken für KLIPS
@@ -192,13 +194,13 @@ layout: main
 losgelöst von XML Hölle, json ist mandatory rest selbst. RESTful
 
 + Screenshot in JSON als Vergleich maschinenlesbar menschenexplorierbar
-  
+
 
 <img src="/process_overview.png" alt="Übersicht Prozesse" style="width: 30vw">
 
 ---
 layout: main
-class: 
+class:
 ---
 
 # Detailansicht Prozesse
@@ -209,7 +211,7 @@ class:
 
 ---
 layout: two-cols-custom
-class: 
+class:
 ---
 
 # Example request
@@ -250,7 +252,7 @@ class:
 
 ---
 layout: main
-class: 
+class:
 ---
 
 # Web Demonstrator
@@ -265,7 +267,7 @@ TODO  URL, ggf. live zeigen
 
 ---
 layout: main
-class: 
+class:
 ---
 
 
@@ -274,7 +276,7 @@ TODO CM Ausblick future: videos, charts
 
 ---
 layout: main
-class: 
+class:
 ---
 
 
