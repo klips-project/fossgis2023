@@ -130,6 +130,45 @@ layout: main
 <img src="/klips_architecture1.png" style="width:90%"/>
 
 ---
+layout: two-cols
+class:
+---
+
+# Daten
+
+- Zeitreihen (Mechn. Lernen) für Modellregionen
+  - Temperaturvorhersagen (+24 Std) aus Modell
+  - Echtzeit Temperaturen aus Modell
+  - Räumliche Auflösung: ????????????????
+- Cloud-Optimized GeoTIFF (COG)
+  - Vollständig kompatibel zu allem was GeoTIFF lesen kann
+  - Räumliche Ausschnitte auslesbar durch HTTP Range Requests
+  - Viele Tools und Libraries, u.a. GDAL, GeoServer, QGIS, GRASS GIS, OpenLayers
+
+::right::
+
+<div style="float: right">
+  <img src="/cog.png" style="width: 300px; float: right;"/>
+</div>
+
+---
+layout: main
+class:
+---
+
+# Rasterstatistiken für KLIPS
+
+- Fasst die Werte eines Rasters basierend auf Vektorgeometrien zusammen
+- Input:
+  - Vorhersage-Raster (COG)
+  - Geometrie (Punkt oder Polygon)
+- Output: Statistiken (als JSON)
+- Exemplarischer Usecase: <br />
+   Eine Schulleitung möchte die Vorhersage für das Schulgelände erfahren.
+
+<img src="/rasterstats.svg" class="py-8" style="width: 50%">
+
+---
 layout: main
 ---
 
@@ -162,22 +201,6 @@ class:
 - [OSGeo Projekt](https://www.osgeo.org/projects/pygeoapi/)
 - Einfacher Workflow um etablierte GDAL oder GRASS Prozesse als OGC API Process zu veröffentlichen
 
----
-layout: main
-class:
----
-
-# Rasterstatistiken für KLIPS
-
-- Fasst die Werte eines Rasters basierend auf Vektorgeometrien zusammen
-- Input:
-  - Vorhersage-Raster (COG)
-  - Geometrie (Punkt oder Polygon)
-- Output: Statistiken (als JSON)
-- Exemplarischer Usecase: <br />
-   Eine Schulleitung möchte die Vorhersage für das Schulgelände erfahren.
-
-<img src="/rasterstats.svg" class="py-8" style="width: 50%">
 
 ---
 layout: two-cols-header
