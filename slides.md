@@ -213,9 +213,11 @@ class:
 <img src="/process_detail_point_html.png" alt="Übersicht Prozesse" style="width: 40vw">
 
 ---
-layout: two-cols-custom
+layout: two-cols-header
 class:
 ---
+
+::left::
 
 # Example request
 
@@ -224,8 +226,8 @@ class:
 ```json
 {
   "inputs": {
-    "x": 1525303,
-    "y": 6636103,
+    "x": 1525303.0,
+    "y": 6636103.0,
     "cogDirUrl": "http://nginx/cog/",
     "inputCrs": "EPSG:3857",
     "startTimeStamp": "2000-01-01T12:32:00Z",
@@ -262,11 +264,11 @@ class:
 
 <img src="/web-demo.png" alt="Web Demonstrator" />
 
-<div class="klips-footer">
+<!-- <div class="klips-footer">
   <SlideCurrentNo className="pageNumber" />
-</div>
+</div> -->
 
-TODO  URL, ggf. live zeigen
+https://klips-dev.terrestris.de/demonstrator/
 
 ---
 layout: main
