@@ -122,18 +122,12 @@ layout: main
 
 # "Unsere Arbeitspakete"
 
-TODO CM herausarbeiten
-Was genau machen meggsimum und terrestris
---> 1,2 prägnante Sätze
+- Aufbau GDI
+- Automatische Prozessierung und Veröffentlichung von Ergebnisdaten über APIs
+- Demonstratoren für einzelne APIs
 
----
-layout: main
----
-
-# KLIPS GDI Übersicht
-
+<div style="margin-top: 20px;"></div>
 <img src="/klips_architecture1.png" style="width:90%"/>
-
 
 ---
 layout: main
