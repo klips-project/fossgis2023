@@ -180,28 +180,37 @@ class:
 <img src="/rasterstats.svg" class="py-8" style="width: 50%">
 
 ---
-layout: main
+layout: two-cols-header
 ---
 
 # Übersicht Prozesse
 
-losgelöst von XML Hölle, json ist mandatory rest selbst. RESTful
+::left::
 
-+ Screenshot in JSON als Vergleich maschinenlesbar menschenexplorierbar
+maschinenlesbar
 
+<img src="/process_overview_json.png" alt="Übersicht Prozesse" style="width: 30vw">
 
-<img src="/process_overview.png" alt="Übersicht Prozesse" style="width: 30vw">
+::right::
+
+menschenexplorierbar
+
+<img src="/process_overview_html.png" alt="Übersicht Prozesse" style="width: 30vw">
 
 ---
-layout: main
+layout: two-cols-header
 class:
 ---
 
 # Detailansicht Prozesse
 
-+ Screenshot in JSON als Vergleich maschinenlesbar menschenexplorierbar
+::left::
 
-<img src="/process_detail.png" alt="Übersicht Prozesse" style="width: 40vw">
+<img src="/process_detail_point_json.png" alt="Übersicht Prozesse" style="width: 40vw">
+
+::right::
+
+<img src="/process_detail_point_html.png" alt="Übersicht Prozesse" style="width: 40vw">
 
 ---
 layout: two-cols-custom
