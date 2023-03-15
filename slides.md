@@ -34,29 +34,6 @@ Hannes Blitza, Christian Mayer
 layout: two-cols-custom
 ---
 
-<img src="/profilbild-christian-mayer.jpeg" style="width: 200px !important"/>
-
-<div class="social">
-
-- <mdi-email-edit-outline /> chris@meggsimum.de
-- <mdi-twitter /> meggsimum
-- <mdi-Github /> github.com/meggsimum
-</div>
-
-::right::
-### Christian Mayer
-
-- Dipl.-Ing. Geoinformatik und Vermessung
-- Gründer und CEO meggsimum
-- Softwarearchitekt und -entwickler
-- OSGeo Foundation Charter Member
-
-<img src="/meggsimum-logo_bold.png" style="width: 300px !important" class="py-6" />
-
----
-layout: two-cols-custom
----
-
 <img src="/hbl.jpg" style="width: 160px !important"/>
 
 <div class="social">
@@ -77,6 +54,30 @@ layout: two-cols-custom
   - GeoServer
 
 <img src="/terrestris-logo-normal.svg" style="width: 200px !important" class="py-6" />
+
+
+---
+layout: two-cols-custom
+---
+
+<img src="/profilbild-christian-mayer.jpeg" style="width: 200px !important"/>
+
+<div class="social">
+
+- <mdi-email-edit-outline /> chris@meggsimum.de
+- <mdi-twitter /> meggsimum
+- <mdi-Github /> github.com/meggsimum
+</div>
+
+::right::
+### Christian Mayer
+
+- Dipl.-Ing. Geoinformatik und Vermessung
+- Gründer und CEO meggsimum
+- Softwarearchitekt und -entwickler
+- OSGeo Foundation Charter Member
+
+<img src="/meggsimum-logo_bold.png" style="width: 300px !important" class="py-6" />
 
 ---
 layout: main
@@ -272,7 +273,7 @@ Payload:
   {
     "values": [
       {
-        "band_0": 276.52368756798535,
+        "band_0": 27.52368756798535,
         "timestamp": "2022-02-16T00:00:00Z"
       },
       {
