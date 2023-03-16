@@ -137,10 +137,10 @@ class:
 
 # KLIPS Daten
 
-- Zeitreihen (Mechn. Lernen + Sensorik) für Modellregionen
+- Zeitreihen (Machine Learning + Sensorik) für Modellregionen
   - Temperaturvorhersagen (+24 Std) aus Modell
   - Echtzeit Temperaturen aus Modell
-  - Räumliche Auflösung: ????????????????
+  - Räumliche Auflösung: ~10m
 - Cloud-Optimized GeoTIFF (COG)
   - Vollständig kompatibel zu allem was GeoTIFF lesen kann
   - Räumliche Ausschnitte auslesbar durch HTTP Range Requests
@@ -168,7 +168,7 @@ class:
   - Altersheim möchte wissen, ob Gelände von Hitzeinsel betroffen ist
   - Stadtplaner wollen wissen, in welchen Gebieten Maßnahmen getroffen werden müssen
 
-<img src="/rasterstats.svg" class="py-8" style="width: 50%">
+<img src="/rasterstats.svg" class="py-4" style="width: 50%">
 
 ---
 layout: main
@@ -334,6 +334,8 @@ class:
 # Hilfreiche Links
 
 - Source Code: https://github.com/klips-project/klips-sdi
+- KLIPS pygeoapi: https://klips-dev.terrestris.de/pygeoapi
+  - OpenAPI: https://klips-dev.terrestris.de/pygeoapi/openapi
 - Demonstrator Rasterstatistiken: https://klips-dev.terrestris.de/demonstrator
 - Vortrag in FOSSGIS: https://pretalx.com/fossgis2023/talk/BTSUDS
 - pygeoapi: https://pygeoapi.io
