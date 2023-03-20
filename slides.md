@@ -138,7 +138,7 @@ class:
 # KLIPS Daten
 
 - Zeitreihen (Machine Learning + Sensorik) für Modellregionen
-  - Temperaturvorhersagen (+24 Std) aus Modell
+  - Temperaturvorhersagen (+48 Std) aus Modell
   - Echtzeit Temperaturen aus Modell
   - Räumliche Auflösung: ~10m
 - Cloud-Optimized GeoTIFF (COG)
