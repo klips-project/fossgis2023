@@ -29,11 +29,15 @@ favicon: https://fossgis-konferenz.de/favicon.ico
 Svenja Dobbert
 
 ---
-layout: two-cols-custom
+layout: two-cols-header
 ---
 
-<img src="/klips_logo.svg" style="max-width: 50px !important, "/>
-<img src="/svdo.jpg" style="width: 160px !important"/>
+<img src="/klips_logo.svg" style="max-width: 12rem !important" class="flex justify-right" />
+
+# Svenja Dobbert
+
+::left::
+<img src="/svdo.jpg" style="width: 12rem !important; margin-top: 3rem !important; margin-left: 1rem !important"/>
 
 <div class="social">
 
@@ -43,16 +47,19 @@ layout: two-cols-custom
 </div>
 
 ::right::
-### Svenja Dobbert
+<div style="margin-top: 3rem !important;">
 
 - Geographie PhD
 - Anwendungsentwicklerin @terrestris
 
 <img src="/terrestris-logo-bw.png" style="width: 200px !important" class="py-6" />
 
+</div>
+
+
 ---
 layout: main
-class:
+class: null
 ---
 
 <img src="/klips_logo.svg" style="max-width: 30% !important" class="self-center" />
@@ -76,6 +83,16 @@ Maschinelles Lernen zur Auswertung historischer Daten und Ableitung von Temperat
 **Simulation**:\
 Auswirkungen baulicher oder planerischer Maßnahmen aufs Stadtklima im Vorhinein durchspielen
 </div>
+
+<!--
+KLIPS-Projekt in 2021 gestartet
+
+Forschungsprojekt
+Aktuell kurz vor Projektende, Nachfolgeprojekt im Gespräch, aber noch nicht konkret geplant
+
+Verarbeitung von Temperaturdaten vor dem konkreten Hintergrund von städtischer Wärmebelastung (Auswirkung auf Gesundheit, bauliche Maßnahmen)
+ZweiPilotstädte: Dresden&Langenfeld
+-->
 
 ---
 layout: two-cols-header
@@ -220,296 +237,127 @@ class:
 - Plugin-framework
 - Einfacher workflow
 
-<img src="/gdal-logo.png" style="float: right; max-width: 3rem !important"/> 
+<img src="/pygeoapi-logo.png" style="float: right; max-width: 12rem !important;  margin-top: 6rem !important;"/> 
 
 ::right::
 
-<img src="/pygeoapi-processes.png" class="img-shadow" style="width: 21rem !important; margin-left: 3rem !important;" />
-
-
-
-
-
-
+<img src="/statistics-process-input.png" class="img-shadow" style="width: 30rem !important; margin-left: 1rem !important;  margin-top: 11rem !important;" />
 
 ---
 layout: two-cols-header
 class:
 ---
+<img src="/klips_logo.svg" style="max-width: 12rem !important" class="flex justify-right" />
 
-
-# KLIPS
-
-::left::
-
-*Digitale Informationsplattform zur
-Lokalisierung, Prognose und Simulation
-von Hitzeinseln*
-
-- **Echtzeitanalyse**: Lokalisierung der aktuell auftretenden Hitzeinseln im Stadtgebiet
-- **Prognose**: Mithilfe von Verfahren des Maschinellen Lernens werden historische Daten ausgewertet und Wirkungszusammenhänge für die nächsten 48 Stunden abgeleitet.
-- **Simulation**: Auswirkungen baulicher oder planerischer Maßnahmen aufs Stadtklima im Vorhinein durchspielen
-
-::right::
-
-<img src="/klips_overview.png" />
-
----
-layout: main
----
-
-# "Unsere" Arbeitspakete
-
-- Aufbau GDI
-- Automatische Prozessierung und Veröffentlichung von Ergebnisdaten über APIs
-- Demonstratoren für einzelne APIs
-
-<div style="margin-top: 20px;"></div>
-<img src="/klips_architecture1.png" style="width:90%"/>
-
----
-layout: two-cols
-class:
----
-
-# KLIPS Daten
-
-- Zeitreihen (Machine Learning + Sensorik) für Modellregionen
-  - Temperaturvorhersagen (+48 Std) aus Modell
-  - Echtzeit Temperaturen aus Modell
-  - Räumliche Auflösung: ~10m
-- Cloud-Optimized GeoTIFF (COG)
-  - Vollständig kompatibel zu allem was GeoTIFF lesen kann
-  - Räumliche Ausschnitte auslesbar durch HTTP Range Requests
-  - Viele Tools und Libraries, u.a. GDAL, GeoServer, QGIS, GRASS GIS, OpenLayers
-
-::right::
-
-<div style="float: right">
-  <img src="/cog.png" style="width: 300px; float: right;"/>
-</div>
-
----
-layout: main
-class:
----
-
-# Rasterstatistiken für KLIPS
-
-- Fasst die Werte eines Rasters basierend auf Vektorgeometrien zusammen
-- Input:
-  - Vorhersage-Raster (COG)
-  - Geometrie (Punkt oder Polygon)
-- Output: Statistiken (als JSON)
-- Exemplarische Use-Cases
-  - Altersheim möchte wissen, ob Gelände von Hitzeinsel betroffen ist
-  - Stadtplaner wollen wissen, in welchen Gebieten Maßnahmen getroffen werden müssen
-
-<img src="/rasterstats.svg" class="py-4" style="width: 50%">
-
----
-layout: main
----
-
-# OGC API Processes
-
-- Nachfolger von WPS (Web Processing Service)
-- **Core Part 1** veröffentlicht in 12/2021
-- RESTful
-- JSON encodings
-- Asynchron und Synchron
-- [Implementierungen](https://github.com/opengeospatial/ogcapi-processes/blob/master/implementations.adoc)
-  - pygeoapi
-  - ZOO-Project
-  - u.w.
-
----
-layout: main
-class:
----
-
-<div class="flex justify-center">
-  <img src="/pygeoapi-logo.png" style="width:15vw" class="self-center py-8" />
-</div>
-
-- Python Server Software für OGC API Services
-- Plugin-Architektur
-- Synchroner und asynchroner Modus
-- OpenAPI
-- Unterstütze Standards: OGC API Features, OGC API Processes, OGC API Coverages, OGC API Tiles, etc.
-- [OSGeo Projekt](https://www.osgeo.org/projects/pygeoapi/)
-- Einfacher Workflow um etablierte GDAL oder GRASS Prozesse als OGC API Process zu veröffentlichen
-
-
----
-layout: two-cols-header
----
-
-# Übersicht Prozesse
+##### HTTP POST: https://klips-dev.terrestris.de/processes/zonal-statistics-time-rasterstats/execution
 
 ::left::
 
-maschinenlesbar
-
-<img src="/process_overview_json.png" alt="Übersicht Prozesse" style="width: 30vw">
-
-::right::
-
-menschenexplorierbar
-
-<img src="/process_overview_html.png" alt="Übersicht Prozesse" style="width: 30vw">
-
----
-layout: two-cols-header
-class:
----
-
-# Detailansicht Prozesse
-
-::left::
-
-<img src="/process_detail_point_json.png" alt="Übersicht Prozesse" style="width: 40vw">
-
-::right::
-
-<img src="/process_detail_point_html.png" alt="Übersicht Prozesse" style="width: 40vw">
-
----
-layout: two-cols-header
-class: request-response
----
-
-::left::
-
-# Example Request
-
-<!-- nebeneinander packen  -->
-
-HTTP POST https://klips-dev.terrestris.de/processes/location-info-rasterstats/execution
-
-Payload:
-
-```json
+```javascript
 {
-  "inputs": {
-    "x": 1525303.0,
-    "y": 6636103.0,
-    "cogDirUrl": "http://nginx/cog/",
-    "inputCrs": "EPSG:3857",
-    "startTimeStamp": "2000-01-01T12:32:00Z",
-    "endTimeStamp": "2024-12-31T12:32:00Z"
-  }
+   "inputs":{
+      "polygonGeoJson":{
+         "type":"Polygon",
+         "coordinates":[[
+               [ 6.94460357153714, 51.11378414303675 ],
+               [ 6.947834186694324, 51.11377441300601 ],
+               [ 6.947958143292145, 51.111993792443116 ],
+               [ 6.944588077027431,  51.111891623590765 ],
+               [ 6.94460357153714,  51.11378414303675 ]
+            ]]},
+      "cogDirUrl":"http://nginx/cog/langenfeld/langenfeld_temperature/",
+      "statisticMethods":["max"],
+      "inputCrs":"EPSG:4326",
+      "startTimeStamp":"2024-02-15T15:00:00+00:00",
+      "endTimeStamp":"2024-02-15T17:00:00+00:00",
+      "bands":[1]
+   }
+}
+```
+::right::
+
+```javascript
+{
+   "values": [
+    {
+      "max": 12.280603408813477,
+      "band": 1,
+      "timestamp": "2024-02-07T15:00:00Z"
+    },
+     {
+      "max": 12.291133880615234,
+      "band": 1,
+      "timestamp": "2024-02-07T16:00:00Z"
+    },
+     {
+      "max": 12.31892204284668,
+      "band": 1,
+      "timestamp": "2024-02-07T17:00:00Z"
+    },
+   ]
 }
 ```
 
-::right::
-
-# Example Response
-
-  ```json
-  {
-    "values": [
-      {
-        "band_0": 27.52368756798535,
-        "timestamp": "2022-02-16T00:00:00Z"
-      },
-      {
-        "band_0": 22.25165738512104,
-        "timestamp": "2022-02-17T00:00:00Z"
-      },
-      {
-        "band_0": 27.88457518896883,
-        "timestamp": "2022-02-18T00:00:00Z"
-      }
-    ]
-  }
-  ```
-
 ---
-layout: main
+layout: two-cols-header
 class:
 ---
+<img src="/klips_logo.svg" style="max-width: 12rem !important" class="flex justify-right" />
 
-# Web Demonstrator
+# Anwendungen
 
-<img src="/web-demo.png" alt="Web Demonstrator" style="height: 80%"/>
-
-<!-- <div class="klips-footer">
-  <SlideCurrentNo className="pageNumber" />
-</div> -->
-
-https://klips-dev.terrestris.de/demonstrator/
+<img src="/applications.png" style="margin-left: 8rem; !important"/>
 
 ---
-layout: main
+layout: two-cols-header
 class:
 ---
+<img src="/klips_logo.svg" style="max-width: 12rem !important" class="flex justify-right" />
 
-# Ausblick
+# Anwendungen
 
-- Top-Level-API
-  - mit Hilfe oder basierend auf OGC API Processes
-  - Direkte Chart Generierung für Zeitreihen
-  - Videos für "Timelapse"
-  - API für Hitze-Warnungen für bestimmte Position / Adressen
+https://klips-dev.terrestris.de/easy-to-use-api/chart/?region=dresden&geom=POINT(13.761238060503882%2051.04731292751711)&threshold=25&band=perceived
 
-## <!-- this adds an empty h2 as spacer -->
+**Input wird durch den Nutzer über die URL im Browser mitgegeben.** 
+
+<img src="/chart-api.png" style="width: 27rem !important" class="img-shadow"/>
+
+---
+layout: two-cols-header
+class:
+---
+<img src="/klips_logo.svg" style="max-width: 12rem !important" class="flex justify-right" />
+
+# Anwendungen
+
+https://klips-dev.terrestris.de/easy-to-use-api/url-generator/
+
+<img src="/url-generator.png" style="width: 35rem !important" class="img-shadow"/>
+
+---
+layout: two-cols-header
+class:
+---
+<img src="/klips_logo.svg" style="max-width: 12rem !important" class="flex justify-right" />
 
 # Fazit
 
-- Sehr einfach nutzbar, für Webanwendungen aber auch für den Menschen
-- Raus aus der XML-Hölle
-- Sehr flexibel in Einrichtung / Implementierung
-
+- 
+- Sehr flexible Struktur
 
 ---
 layout: main
 class:
 ---
 
+<img src="/klips_logo.svg" style="max-width: 30% !important" class="self-center" />
 
+#
 # Hilfreiche Links
+#
+#
 
-- Source Code: https://github.com/klips-project/klips-sdi
-- KLIPS pygeoapi: https://klips-dev.terrestris.de/pygeoapi
-  - OpenAPI: https://klips-dev.terrestris.de/pygeoapi/openapi
-- Demonstrator Rasterstatistiken: https://klips-dev.terrestris.de/demonstrator
-- pygeoapi: https://pygeoapi.io
-- OGC API Processes: https://ogcapi.ogc.org/processes
-- KLIPS Projekt: https://www.klips-projekt.de
-
-
----
-layout: main
----
-
-# Kontakt / Impressum
-
-<div style="width: 45%; float: left;">
-  <address style="text-align: left">
-    <strong>Hannes Blitza</strong><br />
-    <span style="font-size: smaller;">
-      terrestris GmbH &amp; Co. KG<br />
-      Kölnstr. 99<br />
-      53111 Bonn<br />
-      blitza@terrestris.de
-    </span>
-  </address>
-</div>
-
-<div style="width: 45%; float: right; margin-top: 25px;">
-  <address style="text-align: right">
-    <strong>Christian Mayer</strong><br />
-    <span style="font-size: smaller;">
-      meggsimum - Büro für Geoinformatik<br />
-      Schillerstraße 2a<br />
-      67112 Mutterstadt<br />
-      chris@meggsimum.de
-    </span>
-  </address>
-</div>
-
-<p id="license" style="margin-top: 25px;">
-  Diese Folien sind unter <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>
-  veröffentlicht.
-</p>
+- <mdi-Github /> https://github.com/klips-project
+- **KLIPS pygeoapi**: https://klips-dev.terrestris.de/pygeoapi
+- **Dokumentation**: https://klips-dev.terrestris.de/easy-to-use-api/dashboard
+- **KLIPS Projekt**: https://www.klips-projekt.de

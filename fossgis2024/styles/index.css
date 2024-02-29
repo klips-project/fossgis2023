@@ -57,3 +57,9 @@
     margin-right:-3rem!important;
     margin-top:-1rem!important;
 }
+
+.slidev-code {
+    height: 25rem; 
+    max-width: 33rem;
+    font-size: x-small !important; 
+}
