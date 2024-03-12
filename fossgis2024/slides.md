@@ -41,9 +41,7 @@ layout: two-cols-header
 
 <div class="social">
 
-- <mdi-email-edit-outline /> dobbert@terrestris.de
-- <mdi-twitter /> terrestris.de
-- <mdi-Github /> github.com/terrestris
+- **Email**: dobbert@terrestris.de
 </div>
 
 ::right::
@@ -499,7 +497,7 @@ class:
 #
 #
 
-- <mdi-Github /> https://github.com/klips-project
+- **Github**: https://github.com/klips-project
 - **KLIPS pygeoapi**: https://klips-dev.terrestris.de/pygeoapi
 - **Dokumentation**: https://klips-dev.terrestris.de/easy-to-use-api/dashboard
 - **KLIPS Projekt**: https://www.klips-projekt.de
