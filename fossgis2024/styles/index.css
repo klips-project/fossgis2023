@@ -19,6 +19,8 @@
 
 .slidev-layout .social ul {
     list-style: none !important;
+    margin-left: 2.5rem !important;
+    margin-top: 1rem !important;
 }
 
 .request-response.col-left {
